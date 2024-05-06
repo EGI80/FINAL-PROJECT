@@ -1,0 +1,26 @@
+.info-panel{
+    background-color: salmon;
+}
+
+.content-box {
+    background-color: #e2e3e4; /* Warna latar belakang */
+    padding: 50px; /* Jarak antara konten dan tepi kotak */
+    margin-top: -80px; /* Jarak antara kotak dan elemen sebelumnya (jumbotron) */
+    border: 1px solid #060606; /* Garis tepi kotak */
+    border-radius: 5px; /* Sudut bulat untuk kotak */
+    width: 72%; /* Lebar kotak */
+    margin-left: auto; /* Menjadikan margin kiri otomatis */
+    margin-right: auto;
+    display: flex; /* Menggunakan flexbox */
+    justify-content: space-between; /* Menyebarkan item secara merata */
+    align-items: right; /* Mengatur item secara vertikal di tengah */
+}
+
+.lead{
+    height: 30px;
+}
+
+.content-box {
+    display: flex; /* Menggunakan flexbox */
+    align-items: center; /* Mengatur item secara vertikal di tengah */
+}
