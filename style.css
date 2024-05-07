@@ -20,7 +20,10 @@
     height: 30px;
 }
 
-.content-box {
-    display: flex; /* Menggunakan flexbox */
-    align-items: center; /* Mengatur item secara vertikal di tengah */
+
+.jumbotron {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
