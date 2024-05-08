@@ -1,0 +1,28 @@
+.navbar-brand {
+    font-weight: bold;
+}
+.navbar-logo {
+    display: block;
+    margin: auto; 
+    margin-top: 20px;
+    width: 80px; 
+    height: auto;
+}
+.jumbotron{
+    background-color: aquamarine;
+    color: white;
+    font-weight: bold;
+}
+.jumbotron.bg-primary {
+    position: relative; 
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    width: 100%; 
+    color: white;
+
+}
+
