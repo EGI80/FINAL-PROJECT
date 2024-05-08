@@ -11,8 +11,8 @@
     width: 72%; /* Lebar kotak */
     margin-left: auto; /* Menjadikan margin kiri otomatis */
     margin-right: auto;
-    display: flex; /* Menggunakan flexbox */
-    justify-content: space-between; /* Menyebarkan item secara merata */
+     /* Menggunakan flexbox */
+    /* Menyebarkan item secara merata */
     align-items: right; /* Mengatur item secara vertikal di tengah */
 }
 
@@ -26,4 +26,8 @@
     background-size: cover;
     background-position: center;
     color: white;
+}
+
+.logo{
+    
 }
