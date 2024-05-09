@@ -1,0 +1,67 @@
+/* Gaya untuk body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gaya untuk carousel */
+.carousel-item img {
+    height: 600px; /* Sesuaikan tinggi gambar dengan kebutuhan Anda */
+    object-fit: cover;
+}
+
+/* Gaya untuk jumbotron */
+.jumbotron {
+    background-image: url('./img/back.jpg'); /* Ganti dengan path gambar latar belakang yang Anda inginkan */
+    background-size: cover;
+    color: #fff;
+    padding: 500px 0;
+}
+
+/* Gaya untuk container */
+.container {
+    margin-top: 50px;
+}
+
+/* Gaya untuk card */
+.card {
+    background-color: #fff;
+    transition: transform 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Gaya untuk latar belakang */
+html {
+    background-image: url('./img/back.jpg'); /* Ganti dengan path gambar latar belakang yang Anda inginkan */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+  
+        .jumbotron p {
+            font-family: Arial, sans-serif;
+            color: #2e1616; 
+        }
+
+        .card-title {
+            font-family: "Times New Roman", serif; 
+            color: #0066ff; 
+        }
+
+        .card-text {
+            font-family: Geneva, sans-serif; 
+            color: #666; 
+        }
+        .card {
+            transition: transform 0.2s;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+        }
+        
