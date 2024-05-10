@@ -24,35 +24,38 @@
         <lead class="font-weight-bold">✔ Pembatalan gratis pada sebagian besar pemesanan   ✔ 60.000+ lokasi</font-weight-bold>
           <form action="https://www.google.com/maps/@-6.1964288,106.479616,15z?entry=ttu" method="GET" class="form">
             <div class="row">
-                <select class="custom-select col-md-3 styled-input"style="border: 2px solid black;" id="validationCustom04" required>
-                    <option selected disabled value="">Pilih Lokasi Penjemputan</option>
-                    <option>Condong Catur</option>
-                    <option>Bantul</option>
-                    <option>Kulon Progo</option>
-                    <option>Kota Yogyakarta</option>
-                    <option>Gunung Kidul</option>
-                    <option>Kaliurang</option>
-                    <option>Wates</option>
-                </select>
-                <div class="col-md-2 styled-input">
-                    <input type="date" class="form-control"style="border: 2px solid black;" id="tanggal" required>
+              <input type="search" class="custom-select col-md-3 styled-input" style="border: 2px solid black; margin-top: 50px; border-radius: 0.3rem;" id="lokasiPenjemputan" required list="lokasiList">
+              <datalist id="lokasiList">
+                  <option value="Condong Catur">
+                  <option value="Bantul">
+                  <option value="Kulon Progo">
+                  <option value="Kota Yogyakarta">
+                  <option value="Gunung Kidul">
+                  <option value="Kaliurang">
+                  <option value="Wates">
+              </datalist>                     
+                <div class="col-md-3 styled-input">
+                  <input type="datetime-local" class="form-control" style="border: 2px solid black;" id="tanggalPenjemputan" required>
                 </div>
-                <div class="col-md-1,5 styled-input">
-                    <input type="time" class="form-control"style="border: 2px solid black;" id="waktu" required>
+                <div class="col-md-3 styled-input">
+                  <input type="datetime-local" class="form-control" style="border: 2px solid black;" id="tanggalPengambilan" required>
                 </div>
-                <div class="col-md-2 styled-input">
-                    <input type="date" class="form-control"style="border: 2px solid black;" id="tanggal" required>
-                </div>
-                <div class="col-md-1,5 styled-input">
-                    <input type="time" class="form-control"style="border: 2px solid black;" id="waktu" required>
-                </div>
-                <div class="col-md-2 styled-input">
+                <div class="col-md-3 styled-input" style="margin-top: 48px;">
                   <button type="submit" class="btn btn-light" style="border: 2px solid black;">Cari</button>
                 </div>
             </div>
         </form>
+        <div class="lokasi-penjemputan">
+          <h7><em>Pilih Lokasi Penjemputan :</em></h7>
+        </div>
+        <div class="waktu-penjemputan">
+          <h7><em>Tanggal & Waktu Penjemputan :</em></h7>
+        </div>
+        <div class="waktu-pengambilan">
+          <h7><em>Tanggal & Waktu Pengambilan :</em></h7>
+        </div>
     </div>
-    <div class="container">
+    <div class="container ">
       <h1 class="text-left style=font-size: 16px;">Menggunakan Mobil Kualitas Tinggi Dengan Merek Terkenal Dan Mewah</h1>
     </div>
     <div id="gallery">
@@ -106,23 +109,23 @@
   <h5>Jaminan Kesesuaian Harga</h5>
   <p>Menemukan kesepakatan yang sama dengan harga lebih murah? Kami akan mencocokkan harganya</p>
 </div>
-<div class="destinasi">
-  <h5>Destinasi Teratas di Seluruh Dunia</h5>
-  <ul id="daftarDestinasi">
-    <li><a href="#" onclick="tampilkanDetail('Condong Catur')">Condong Catur</a></li>
-    <li><a href="#" onclick="tampilkanDetail('Kaliurang')">Kaliurang</a></li>
-    <li><a href="#" onclick="tampilkanDetail('Kota Yogyakarta')">Kota Yogyakarta</a></li>
-  </ul>
+<div class="row">
+  <div class="destinasi">
+    <h5>Destinasi Teratas di Seluruh Dunia</h5>
+    <ul id="daftarDestinasi">
+      <li><a href="#" onclick="isiLokasiPenjemputan('Condong Catur')">Condong Catur</a></li>
+      <li><a href="#" onclick="isiLokasiPenjemputan('Kaliurang')">Kaliurang</a></li>
+      <li><a href="#" onclick="isiLokasiPenjemputan('Kota Yogyakarta')">Kota Yogyakarta</a></li>      
+    </ul>
+  </div>
+  <div class="bandara">
+    <h5>Bandara Teratas di Seluruh Dunia</h5>
+    <ul id="daftarBandara">
+      <li><a href="#" onclick="isiLokasiPenjemputan('Bandara DIY')">Bandara DIY</a></li>
+      <li><a href="#" onclick="isiLokasiPenjemputan('Bandara DIC')">Bandara DIC</a></li>
+      <li><a href="#" onclick="isiLokasiPenjemputan('Bandara DIK')">Bandara DIK</a></li>      
+  </div>
 </div>
-
-<div class="bandara">
-  <h5>Bandara Teratas di Seluruh Dunia</h5>
-  <ul id="daftarBandara">
-    <li><a href="#" onclick="tampilkanDetail('Bandara DIY')">Bandara DIY</a></li>
-    <li><a href="#" onclick="tampilkanDetail('Bandara DIC')">Bandara DIC</a></li>
-    <li><a href="#" onclick="tampilkanDetail('Bandara DIK')">Bandara DIK</a></li>
-</div>
-
 <div id="detailKota"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
