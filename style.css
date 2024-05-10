@@ -23,7 +23,11 @@
 
 
 .jumbotron {
+<<<<<<< HEAD
     background-image: url('./img/pesawat1.jpg');
+=======
+    background-image: url('./img/background.jpg');
+>>>>>>> b11b93f15bd818b65b727c9881d874278a658f78
     background-size: cover;
     background-position: 0px -350px;
     color: white;
