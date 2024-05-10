@@ -3,9 +3,9 @@
 }
 
 .content-box {
-    background-color: #e2e3e4; /* Warna latar belakang */
+    background-image: url(./img/background.jpg); /* Warna latar belakang */
     padding: 50px; /* Jarak antara konten dan tepi kotak */
-    margin-top: -80px; /* Jarak antara kotak dan elemen sebelumnya (jumbotron) */
+    margin-top: -120px; /* Jarak antara kotak dan elemen sebelumnya (jumbotron) */
     border: 1px solid #060606; /* Garis tepi kotak */
     border-radius: 5px; /* Sudut bulat untuk kotak */
     width: 72%; /* Lebar kotak */
@@ -14,6 +14,7 @@
      /* Menggunakan flexbox */
     /* Menyebarkan item secara merata */
     align-items: right; /* Mengatur item secara vertikal di tengah */
+    background-size: cover;
 }
 
 .lead{
@@ -22,12 +23,39 @@
 
 
 .jumbotron {
-    background-image: url('background.jpg');
+    background-image: url('./img/pesawat1.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: 0px -350px;
     color: white;
+    
 }
 
-.logo{
-    
+.card-deck {
+ max-width: 70%;
+ max-height: 70%;    
+ margin-right: auto;
+ margin-left: auto;
+}
+
+.jumbotron-lg {
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius:.3rem;
+    font-size: 1.25rem;
+    line-height: 150px;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+  }
+
+  .card img {
+  width: 70%; /* adjust the width to your desired size */
+  height: auto; /* maintain the aspect ratio */
+  margin: 0 auto; /* center the image horizontally */
 }

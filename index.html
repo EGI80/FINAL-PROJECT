@@ -1,149 +1,221 @@
-    <!doctype html>
-    <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="style.css">
+        <!doctype html>
+        <html lang="en">
+        <head>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="stylesheet" href="style.css">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-        <title>Hello, world!</title>
-    </head>
-    <body>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#">Perjalanan <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">cerita</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">triks perjalanan</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">penawaran</a>
-                    </li>
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                        transaksi tambahan
-                        </a>
-                        <div class="dropdown-menu baru">
-                        <a class="dropdown-item" href="#">mobil</a>
-                        <a class="dropdown-item" href="#">penginapan</a>
-                        <a class="dropdown-item" href="#">motor</a>
-                      
-
-                        
+            <title>Hello, world!</title>
+        </head>
+        <body>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#">Perjalanan <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">cerita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">triks perjalanan</a>
+                        </li>
 
                         <li class="nav-item">
-                            <a class="nav-link btn btn-primary rounded-pill" href="#">join us </a>
+                            <a class="nav-link" href="#">penawaran</a>
                         </li>
                         
-                        </div>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </nav>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            transaksi tambahan
+                            </a>
+                            <div class="dropdown-menu baru">
+                            <a class="dropdown-item" href="#">mobil</a>
+                            <a class="dropdown-item" href="#">penginapan</a>
+                            <a class="dropdown-item" href="#">motor</a>
+                        
 
-            <div class="jumbotron  ">
-                    <div class="container">
+                            
+
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-primary rounded-pill" href="#">join us </a>
+                            </li>
+                            
+                            </div>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+
+                <div class="jumbotron jumbotron-lg ">
+                       
+                        
+                        <p class="display-4 font-weight-bold">Pesan tiket penerbangan</p>
+                        <p >situs lain sederhadan tidak dapat menemukan.</p>
+
+                   
+
+                </div>
+                <div class="content-box ">
+                    <!-- Konten kotak antara Jumbotron dan konten setelahnya -->
+                
                     
-                    <p class="lead">Pesan tiket penerbangan murah</p>
-                    <p>situs lain sederhadan tidak dapat menemukan.</p>
+                    <form>
+                        <div class="row">
+                            <div class="col mb-3 mt-3">
+                                <label for="inputState">Keberangktan</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected></option>
+                                    <option>Soekarno-hatta</option>
+                                    <option>Ngurah rai</option>
+                                    <option>Juanda</option>
+                                    <option>Sultan hassanudin</option>
+                                    <option>Kualanamu</option>
+                                </select>
+                            </div>
+                            <div class="col mb-3 mt-3">
+                                <label for="inputState">Tujuan</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected></option>
+                                    <option>Soekarno-hatta</option>
+                                    <option>Ngurah rai</option>
+                                    <option>Juanda</option>
+                                    <option>Sultan hassanudin</option>
+                                    <option>Kualanamu</option>
+                                </select>
+
+                            
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                            <input type="date" class="form-control" placeholder="jadwal keberangktan">
+                            </div>
+                            <div class="col">
+                            <input type="date" class="form-control" placeholder="jadwal kembali">
+                            <div class="text-center"> <!-- Add this div and class -->
+                                <a class="nav-link btn btn-primary rounded-pill mt-4" href="#">cari </a>
+                            </div>
+                            
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+
+                    
+                    </div>
 
                 </div>
+                
+                <section>
+    <div class="container mb-4">
+        <a href="">EGI DIAN ADI.com</a>
+        
+        <a href="">Penerbangan Murah </a>
+    </div>
+
+    <span class="border"></span>
+
+
+    <div class="card-container">
+        <div class="card-deck ">
+            <div class="card border-0">
+            <img src="./img/plane.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title font-weight-bold">Satu pencarian, semua penerbangan</h5>
+                <p class="card-text">Kiwi-Code menemukan penerbangan murah yang tidak dapat dilihat oleh situs lain</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+                </div>
+                <div class="card border-0">
+                <img src="./img/credit.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Pemesanan yang aman dan mudah</h5>
+                    <p class="card-text">Kami menerima sebagian besar metode pembayaran dan menjamin tingkat keamanan tertinggi</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+                </div>
+                <div class="card border-0">
+                <img src="./img/teamwork.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Dipercaya oleh jutaan orang</h5>
+                    <p class="card-text">Bergabunglah dengan lebih dari 10 juta penumpang setiap tahun yang memesan dengan mudah</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+                </div>
+
+                <div class="card border-0">
+                    <img src="./img/plane-ticket.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">harga terjangkau </h5>
+                        <p class="card-text">kami menyediakan maskapai termurah dengan fasilitas terbaik</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    </div>
+        
 
             </div>
-            <div class="content-box ">
-                <!-- Konten kotak antara Jumbotron dan konten setelahnya -->
-               
-                
-                <form>
-                    <div class="row">
-                        <div class="col mb-3 mt-3">
-                            <label for="inputState">Keberangktan</label>
-                            <select id="inputState" class="form-control">
-                                <option selected></option>
-                                <option>Soekarno-hatta</option>
-                                <option>Ngurah rai</option>
-                                <option>Juanda</option>
-                                <option>Sultan hassanudin</option>
-                                <option>Kualanamu</option>
-                            </select>
-                        </div>
-                        <div class="col mb-3 mt-3">
-                            <label for="inputState">Tujuan</label>
-                            <select id="inputState" class="form-control">
-                                <option selected></option>
-                                <option>Soekarno-hatta</option>
-                                <option>Ngurah rai</option>
-                                <option>Juanda</option>
-                                <option>Sultan hassanudin</option>
-                                <option>Kualanamu</option>
-                            </select>
+     </div>
 
-                        
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                        <input type="date" class="form-control" placeholder="jadwal keberangktan">
-                        </div>
-                        <div class="col">
-                        <input type="date" class="form-control" placeholder="jadwal kembali">
-                        <div class="text-center"> <!-- Add this div and class -->
-                            <a class="nav-link btn btn-primary rounded-pill mt-4" href="#">cari </a>
-                        </div>
-                        
-                        </div>
-                    </div>
-                </form>
-                </div>
+                </section>
 
-                
-                </div>
 
-            </div>
-            
-            <section>
-<div class="container">
-    <a href="">EGI DIAN ADI.com</a>
-    
-    <a href="">Penerbangan Murah </a>
-</div>
-            </section>
-
+         <section>
             <div class="container">
-                <img src="plane.png" alt="" style="margin-top: 120px; max-width: 110px; max-height: 110px;">
+                <p class="font-weight-bold">penerbangan nasional terpopuler</p>
+
+                <div>
+                    <ul class="list-group ">
+                        <li class="list-group-item">An item
+                            <p>Kiwi.com adalah cara terbaik untuk mencari, menemukan, dan memesan penerbangan murah. Kami membuat diskon, penawaran penerbangan, dan tarif udara murah mudah ditemukan.</p>
+                            <p>Untuk menemukan penerbangan murah secara online, Kiwi.com adalah cara terbaik dan termudah untuk mendapatkan diskon pada rute satu arah, pulang pergi, internasional, dan multi-kota. Panduan ini menjelaskan bagaimana Kiwi.com bekerja, dan bagaimana kami dapat membantu Anda mencari dan memesan penerbangan termurah yang tersedia.</p>
+                            <h4>Delapan tips untuk memesan penerbangan murah di Kiwi.com</h4>
+                            <h5>Waktu dan hari terbaik untuk memesan penerbangan</h5>
+                            
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+
+                        </li>
+                    </ul>
+
+                </div>
             </div>
+            
 
-
-
-
-
-
-
-
-
+        </section>
 
             
-        
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
-        
 
-    </body>
-    </html>
+
+
+
+
+
+
+
+
+                
+            
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+            
+
+        </body>
+        </html>
