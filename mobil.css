@@ -68,7 +68,8 @@
     box-shadow: 5px 5px 5px #000000, -2px -2px 2px #00000026;
 }
 .text-left {
-    margin-top: -30px;
+    margin-top: 20px;
+    margin-right: 20px;
     font-size: 25px;
     font-weight: bold;
 }
@@ -93,7 +94,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 5px;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 #gallery figure:nth-child(7n+1){
     --duration: 2s;
@@ -116,7 +117,7 @@ main {
     margin-left: -200px;
 }
 #gallery figure:nth-child(7n+6){
-    --duration: 2s;
+    --duration: 1.5s;
     margin-left: -250px;
 }
 #gallery figure:nth-child(7n+7){
@@ -199,16 +200,54 @@ figure img {
 		transform: rotate3d(0, 0, 1, 0deg);
 	}
 }
-#info {
-	position: relative;
-	text-align: center;
-	z-index: 1;
+.d-flex{
+    display: flex;
+    height: 80px;
+    margin-top: 70px;
+    margin-left: 70px;
 }
-#info a {
-	font-size: 1.1rem;
+.text-menulis{
+    margin-top: -70px;
+    margin-left: 160px;
+    
 }
-@media (min-width: 800px) {
-	#gallery {
-		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-	}
+.pencarian-image{
+    width: 100px;
+    margin-left: 520px;
+    margin-top: -190px;
 }
+.text-pencarian{
+    margin-left: 630px;
+    margin-top: -145px;
+}
+.jaminan-image{
+    width: 100px;
+    margin-left: 930px;
+    margin-top: -150px;
+}
+.text-jaminan{
+    margin-left: 1040px;
+    margin-top: -120px;
+}
+.destinasi, .bandara {
+    margin-bottom: 20px;
+}
+.destinasi h2, .bandara h2 {
+    font-size: 18px;
+}
+.destinasi ul, .bandara ul {
+    list-style-type: none;
+    padding: 0;
+}
+.destinasi li, .bandara li {
+    margin-bottom: 5px;
+}
+.bandara{
+    margin-right: 100px;
+}
+#detailKota {
+    display: none;
+    margin-top: 20px;
+    font-weight: bold;
+}
+  
