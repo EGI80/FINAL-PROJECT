@@ -1,28 +1,214 @@
 .navbar-brand {
     font-weight: bold;
 }
+.pesanan{
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #efefef;
+    box-shadow: -6px -7px -10px #00000026;
+    color: #0066ff;
+    cursor: pointer;
+}
+.pesanan:hover{
+    box-shadow: 5px 5px 5px #001aff, -2px -2px 2px #00000026;
+}
 .navbar-logo {
     display: block;
     margin: auto; 
-    margin-top: 20px;
-    width: 80px; 
+    margin-top: 10px;
+    width: 200px; 
     height: auto;
+
 }
 .jumbotron{
     background-color: aquamarine;
     color: white;
     font-weight: bold;
+    background-image: url('./img/backroundjumnotron.jpg');
+    background-size: cover;
+    background-position: center;
 }
 .jumbotron.bg-primary {
     position: relative; 
 }
-
 .dropdown {
     position: absolute;
     top: 100%;
     left: 0; 
     width: 100%; 
     color: white;
-
+}
+.styled-input input[type="date"],
+.styled-input input[type="time"] {
+    border: 2px solid black;
+    border-radius: 0.50rem; 
+    background-color: #ffffff; 
+    box-shadow: -6px -7px -10px #00000026;
+    color: #000000;
+    cursor: pointer;
+}
+.styled-input input[type="date"]:hover,
+.styled-input input[type="time"]:hover {
+    box-shadow: 5px 5px 5px #000000, -2px -2px 2px #00000026;
+}
+.styled-input button {
+    border: 3px solid #000000;
+    border-radius: 0.50rem;
+    background-color: #ffffff; 
+    margin-top: 0px;
+    border: none;
+    box-shadow: -6px -7px -10px #00000026;
+    color: #000000;
+    cursor: pointer;
+}
+.styled-input button:hover{
+    box-shadow: 5px 5px 5px #000000, -2px -2px 2px #00000026;
+}
+.text-left {
+    margin-top: -30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#gallery {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+#gallery figure:nth-child(7n+1){
+    --duration: 2s;
+    margin-right: -130px;
+}
+#gallery figure:nth-child(7n+2){
+    --duration: 1.5s;
+    margin-left: -50px;
+}
+#gallery figure:nth-child(7n + 3){
+    --duration:2s;
+    margin-left: -100px;
+}
+#gallery figure:nth-child(7n + 4) {
+	--duration: 1.5s;
+    margin-left: -150px;
+}
+#gallery figure:nth-child(7n + 5) {
+	--duration: 2s;
+    margin-left: -200px;
+}
+#gallery figure:nth-child(7n+6){
+    --duration: 2s;
+    margin-left: -250px;
+}
+#gallery figure:nth-child(7n+7){
+    --duration: 2s;
+    margin-left: -300px;
+}
+#gallery figure {
+    --angle: 3deg;
+    --count: 5;
+    --duration: 1s;
+    --delay: calc(-0.5 * var(--duration));
+    --direction: alternate;
+    position: relative;
+    display: inline-block;
+    margin: var(--adjust-size);
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.4);
+    width: 70%;
+    height: auto;
+    text-align: center;
+    background-color: ghostwhite;
+    background-image: url(./img/backroundmobil.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    transform-origin: center 0.22rem;
+    will-change: 50px;
+    break-inside: avoid;
+    overflow: hidden;
+    outline: 1px solid transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#gallery.active figure {
+    animation-duration: var(--duration), 1.5s;
+    animation-delay: var(--delay), calc(var(--delay) + var(--duration) * var(--count));
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite, 1;
+    animation-direction: var(--direction), normal;
+    animation-fill-mode: both;
+    animation-name: swing, swingEnd;
+}
+
+#gallery figure:after {
+    position: absolute;
+    top: 0.22rem;
+    left: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    content: "";
+    background: var(--pin-color);
+    border-radius: 50%;
+    box-shadow: -0.1rem -0.1rem 0.3rem 0.02rem rgba(0, 0, 0, 0.5) inset;
+    filter: drop-shadow(0.3rem 0.15rem 0.2rem rgba(0, 0, 0, 0.5));
+    transform: translateZ(0);
+    z-index: 2;
+}
+
+figure img {
+    aspect-ratio: 1 /1;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate3d(0, 0, 1, calc(-1 * var(--angle)));
+    }
+    100% {
+        transform: rotate3d(0, 0, 1, var(--angle));
+    }
+}
+@keyframes swingEnd {
+	to {
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+}
+#info {
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+#info a {
+	font-size: 1.1rem;
+}
+@media (min-width: 800px) {
+	#gallery {
+		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	}
+}
