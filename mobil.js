@@ -21,3 +21,17 @@
 		animStart();
 	};
 })();
+  function isiLokasiPenjemputan(destinasi) {
+    var now = new Date();
+    var tahun = now.getFullYear();
+    var bulan = ('0' + (now.getMonth() + 1)).slice(-2);
+    var tanggal = ('0' + now.getDate()).slice(-2);
+    var jam = ('0' + now.getHours()).slice(-2);
+    var menit = ('0' + now.getMinutes()).slice(-2);
+
+    var waktuSekarang = tahun + '-' + bulan + '-' + tanggal + 'T' + jam + ':' + menit;
+
+    document.getElementById('lokasiPenjemputan').value = destinasi;
+    document.getElementById('tanggalPenjemputan').value = waktuSekarang;
+    document.getElementById('tanggalPengambilan').value = waktuSekarang;
+  }

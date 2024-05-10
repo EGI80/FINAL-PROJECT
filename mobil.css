@@ -41,22 +41,21 @@
     width: 100%; 
     color: white;
 }
-.styled-input input[type="date"],
-.styled-input input[type="time"] {
+.styled-input input[type="datetime-local"]{
     border: 2px solid black;
-    border-radius: 0.50rem; 
+    border-radius: 0.3rem; 
     background-color: #ffffff; 
     box-shadow: -6px -7px -10px #00000026;
     color: #000000;
     cursor: pointer;
+    margin-top: 50px;
 }
-.styled-input input[type="date"]:hover,
-.styled-input input[type="time"]:hover {
+.styled-input input[type="datetime-local"]:hover{
     box-shadow: 5px 5px 5px #000000, -2px -2px 2px #00000026;
 }
 .styled-input button {
     border: 3px solid #000000;
-    border-radius: 0.50rem;
+    border-radius: 0.3rem;
     background-color: #ffffff; 
     margin-top: 0px;
     border: none;
@@ -72,6 +71,20 @@
     margin-right: 20px;
     font-size: 25px;
     font-weight: bold;
+}
+.lokasi-penjemputan {
+    position: relative;
+    top: -60px;
+}
+.waktu-penjemputan{
+    position: relative;
+    top: -85px;
+    left: 320px;
+}  
+.waktu-pengambilan{
+    position: relative;
+    top: -110px;
+    left: 640px;
 }
 * {
     margin: 0;
@@ -95,6 +108,8 @@ main {
     gap: 5px;
     width: 100%;
     margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 #gallery figure:nth-child(7n+1){
     --duration: 2s;
@@ -243,11 +258,17 @@ figure img {
     margin-bottom: 5px;
 }
 .bandara{
-    margin-right: 100px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 50px;
+}
+.destinasi{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 50px;
 }
 #detailKota {
     display: none;
     margin-top: 20px;
     font-weight: bold;
 }
-  
