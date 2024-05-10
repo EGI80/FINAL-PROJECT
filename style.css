@@ -23,11 +23,8 @@
 
 
 .jumbotron {
-<<<<<<< HEAD
+
     background-image: url('./img/pesawat1.jpg');
-=======
-    background-image: url('./img/background.jpg');
->>>>>>> b11b93f15bd818b65b727c9881d874278a658f78
     background-size: cover;
     background-position: 0px -350px;
     color: white;
@@ -62,4 +59,21 @@
   width: 70%; /* adjust the width to your desired size */
   height: auto; /* maintain the aspect ratio */
   margin: 0 auto; /* center the image horizontally */
+}
+
+.grub{
+    margin-left: 70px;
+    margin-left: 70px;
+}
+.tutor{
+    margin-top: 20px;
+    margin-left: 210px;
+    margin-right: 210px;
+}
+#gambar :hover{
+    filter: brightness(70%);
+}
+
+.card{
+    transition: filter 0.3s ease;
 }
