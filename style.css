@@ -27,3 +27,16 @@
     background-position: center;
     color: white;
 }
+
+.hero {
+    background-image: url('foto12.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+h5 {
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+
