@@ -43,3 +43,37 @@
 		answer.style.display = "none";
 	}
 }
+
+function redirectToCarPage() {
+    var selectedCar = document.getElementById('mobilPilihan').value.toLowerCase();
+
+    switch (selectedCar) {
+        case 'bmw':
+            window.location.href = 'bmw.html';
+            break;
+        case 'bugatti':
+            window.location.href = 'bugatti.html';
+            break;
+        case 'ferrari':
+            window.location.href = 'ferrari.html';
+            break;
+        case 'lamborghini':
+            window.location.href = 'lamborghini.html';
+            break;
+        case 'porsche':
+            window.location.href = 'porsche.html';
+            break;
+        case 'honda':
+            window.location.href = 'honda.html';
+            break;
+        case 'ford':
+            window.location.href = 'ford.html';
+            break;
+        default:
+            break;
+    }
+}
+document.querySelector('.form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    redirectToCarPage();
+});
