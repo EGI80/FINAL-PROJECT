@@ -1,0 +1,307 @@
+.navbar-brand {
+    font-weight: bold;
+}
+.pesanan{
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #efefef;
+    box-shadow: -6px -7px -10px #00000026;
+    color: #0066ff;
+    cursor: pointer;
+}
+.pesanan:hover{
+    box-shadow: 5px 5px 5px #001aff, -2px -2px 2px #00000026;
+}
+.navbar-logo {
+    display: block;
+    margin: auto; 
+    margin-top: 10px;
+    width: 200px; 
+    height: auto;
+
+}
+.jumbotron{
+    background-color: aquamarine;
+    color: white;
+    font-weight: bold;
+    background-image: url('./img/backroundjumnotron.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.jumbotron.bg-primary {
+    position: relative; 
+}
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    width: 100%; 
+    color: white;
+}
+.styled-input input[type="datetime-local"]{
+    border: 2px solid black;
+    border-radius: 0.3rem; 
+    background-color: #ffffff; 
+    box-shadow: -6px -7px -10px #00000026;
+    color: #000000;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.styled-input input[type="datetime-local"]:hover{
+    box-shadow: 5px 5px 5px #000000, -2px -2px 2px #00000026;
+}
+.styled-input button {
+    border: 3px solid #000000;
+    border-radius: 0.3rem;
+    background-color: #ffffff; 
+    margin-top: 0px;
+    border: none;
+    box-shadow: -6px -7px -10px #00000026;
+    color: #000000;
+    cursor: pointer;
+}
+.styled-input button:hover{
+    box-shadow: 5px 5px 5px #000000, -2px -2px 2px #00000026;
+}
+.text-left {
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.lokasi-penjemputan {
+    margin-top: -60px;
+}
+.waktu-penjemputan{
+    margin-left: 520px;
+    margin-top: -25px;
+
+}  
+.waktu-pengambilan{
+    margin-left: 715px;
+    margin-top: -25px;
+
+}
+.mobil-pilihan{
+    margin-top: -60px;
+    margin-left: 5px;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+#gallery {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 5px;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+#gallery figure:nth-child(7n+1){
+    --duration: 2s;
+    margin-right: -130px;
+}
+#gallery figure:nth-child(7n+2){
+    --duration: 1.5s;
+    margin-left: -50px;
+}
+#gallery figure:nth-child(7n + 3){
+    --duration:2s;
+    margin-left: -100px;
+}
+#gallery figure:nth-child(7n + 4) {
+	--duration: 1.5s;
+    margin-left: -150px;
+}
+#gallery figure:nth-child(7n + 5) {
+	--duration: 2s;
+    margin-left: -200px;
+}
+#gallery figure:nth-child(7n+6){
+    --duration: 1.5s;
+    margin-left: -250px;
+}
+#gallery figure:nth-child(7n+7){
+    --duration: 2s;
+    margin-left: -300px;
+}
+#gallery figure {
+    --angle: 3deg;
+    --count: 5;
+    --duration: 1s;
+    --delay: calc(-0.5 * var(--duration));
+    --direction: alternate;
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.4);
+    width: 70%;
+    height: auto;
+    text-align: center;
+    background-color: ghostwhite;
+    background-image: url(./img/backroundmobil.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    transform-origin: center 0.22rem;
+    will-change: 50px;
+    break-inside: avoid;
+    overflow: hidden;
+    outline: 1px solid transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#gallery.active figure {
+    animation-duration: var(--duration), 1.5s;
+    animation-delay: var(--delay), calc(var(--delay) + var(--duration) * var(--count));
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite, 1;
+    animation-direction: var(--direction), normal;
+    animation-fill-mode: both;
+    animation-name: swing, swingEnd;
+}
+
+#gallery figure:after {
+    position: absolute;
+    top: 0.22rem;
+    left: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    content: "";
+    background: var(--pin-color);
+    border-radius: 50%;
+    box-shadow: -0.1rem -0.1rem 0.3rem 0.02rem rgba(0, 0, 0, 0.5) inset;
+    filter: drop-shadow(0.3rem 0.15rem 0.2rem rgba(0, 0, 0, 0.5));
+    transform: translateZ(0);
+    z-index: 2;
+}
+
+figure img {
+    aspect-ratio: 1 /1;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate3d(0, 0, 1, calc(-1 * var(--angle)));
+    }
+    100% {
+        transform: rotate3d(0, 0, 1, var(--angle));
+    }
+}
+@keyframes swingEnd {
+	to {
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+}
+.d-flex{
+    display: flex;
+    height: 80px;
+    margin-top: 70px;
+    margin-left: 70px;
+}
+.text-menulis{
+    margin-top: -70px;
+    margin-left: 160px;
+    
+}
+.pencarian-image{
+    width: 100px;
+    margin-left: 520px;
+    margin-top: -190px;
+}
+.text-pencarian{
+    margin-left: 630px;
+    margin-top: -145px;
+}
+.jaminan-image{
+    width: 100px;
+    margin-left: 930px;
+    margin-top: -150px;
+}
+.text-jaminan{
+    margin-left: 1040px;
+    margin-top: -120px;
+}
+.destinasi, .bandara {
+    margin-bottom: 20px;
+}
+.destinasi h2, .bandara h2 {
+    font-size: 18px;
+}
+.destinasi ul, .bandara ul {
+    list-style-type: none;
+    padding: 0;
+}
+.destinasi li, .bandara li {
+    margin-bottom: 5px;
+}
+.bandara{
+    margin-left: 300px;
+    margin-right: 70px;
+    margin-top: 50px;
+}
+.destinasi{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 50px;
+}
+#detailKota {
+    display: none;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.faq-box {
+    border: 1px solid rgb(172, 172, 172);
+    padding: 20px;
+    background-color: white;
+    margin-left: 70px; 
+    margin-right: 70px; 
+    width: 500px;
+    max-height: 200px; 
+    overflow-y: auto; 
+}
+.faq-box h6 {
+    margin-top: 0;
+}
+.faq-box .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    border-bottom: 1px solid rgb(172, 172, 172);
+}
+.faq-box label {
+    flex: 1;
+}
+.faq-box p {
+    flex: 3;
+    margin-left: 10px;
+}
+.faq-box button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
