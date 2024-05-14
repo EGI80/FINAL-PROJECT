@@ -1,109 +1,376 @@
-    <!doctype html>
-    <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="style.css">
+        <!doctype html>
+        <html lang="en">
+        <head>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <script src="main.js"></script>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-        <title>Hello, world!</title>
-    </head>
-    <body>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#">Perjalanan <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">cerita</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">triks perjalanan</a>
-                    </li>
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                        transaksi tambahan
-                        </a>
-                        <div class="dropdown-menu baru">
-                        <a class="dropdown-item" href="#">mobil</a>
-                        <a class="dropdown-item" href="#">penginapan</a>
-                        <a class="dropdown-item" href="#">motor</a>
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+            <title>Hello, world!</title>
+        </head>
+        <body>
+                <nav class="navbar navbar-expand-lg navbar-light bg-primary" id="navigation">
+                    <div class="container">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#">Perjalanan <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">cerita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mobil.html">triks perjalanan</a>
+                        </li>
 
                         <li class="nav-item">
-                            <a class="nav-link btn btn-primary rounded-pill" href="#">join us </a>
+                            <a class="nav-link" href="#">penawaran</a>
                         </li>
                         
-                        </div>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </nav>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            transaksi tambahan
+                            </a>
+                            <div class="dropdown-menu baru">
+                            <a class="dropdown-item" href="#">mobil</a>
+                            <a class="dropdown-item" href="#">penginapan</a>
+                            <a class="dropdown-item" href="#">motor</a>
+                        
 
-            <div class="jumbotron text-left ">
-                    <div class="container">
+                            
+
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-primary rounded-pill" href="#">join us </a>
+                            </li>
+                            
+                            </div>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+
+                
+
+                <div class="jumbotron jumbotron-lg " id="jumbo">
+                       
+                        
+                        <p class="display-4 font-weight-bold">Pesan tiket penerbangan</p>
+                        <p >situs lain sederhadan tidak dapat menemukan.</p>
+
+                   
+
+                </div>
+
+                
+                <div class="content-box ">
+                    <!-- Konten kotak antara Jumbotron dan konten setelahnya -->
+                
                     
-                    <p class="lead">Pesan tiket penerbangan murah</p>
-                    <p>situs lain sederhadan tidak dapat menemukan.</p>
+                    <form>
+                        <div class="row">
+                            <div class="col mb-3 mt-3">
+                                <label for="inputState">Keberangktan</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected></option>
+                                    <option>Soekarno-hatta</option>
+                                    <option>Ngurah rai</option>
+                                    <option>Juanda</option>
+                                    <option>Sultan hassanudin</option>
+                                    <option>Kualanamu</option>
+                                </select>
+                            </div>
+                            <div class="col mb-3 mt-3">
+                                <label for="inputState">Tujuan</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected></option>
+                                    <option>Soekarno-hatta</option>
+                                    <option>Ngurah rai</option>
+                                    <option>Juanda</option>
+                                    <option>Sultan hassanudin</option>
+                                    <option>Kualanamu</option>
+                                </select>
 
-                </div>
+                            
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                            <input type="date" class="form-control" placeholder="jadwal keberangktan">
+                            </div>
+                            <div class="col">
+                            <input type="date" class="form-control" placeholder="jadwal kembali">
+                            <div class="text-center"> <!-- Add this div and class -->
+                                <a class="nav-link btn btn-primary rounded-pill mt-4" href="#">cari </a>
+                            </div>
+                            
+                            </div>
+                        </div>
+                    </form>
+                    </div>
 
-            </div>
-            <div class="content-box ">
-                <!-- Konten kotak antara Jumbotron dan konten setelahnya -->
-                <div>
-                    <li class="nav-item dropdown  ">
-                        <a class="nav-link dropdown-toggle mt-0" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                        transaksi tambahan
-                        </a>
-                        <div class="dropdown-menu baru">
-                        <a class="dropdown-item" href="#">mobil</a>
-                        <a class="dropdown-item" href="#">penginapan</a>
-                        <a class="dropdown-item" href="#">motor</a>
+                    
+                    </div>
+
                 </div>
                 
-                <form>
-                    <div class="row">
-                        <div class="col mb-3 mt-3">
-                        <input type="text" class="form-control" placeholder="keberangkatan">
-                        </div>
-                        <div class="col mb-3 mt-3">
-                        <input type="text" class="form-control" placeholder="tujuan ">
 
-                        
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                        <input type="date" class="form-control" placeholder="jadwal keberangktan">
-                        </div>
-                        <div class="col">
-                        <input type="date" class="form-control" placeholder="jadwal kembali">
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-primary rounded-pill mt-4" href="#">cari </a>
-                        </li>
-                        </div>
-                    </div>
-                </form>
-                </div>
-                </div>
+                
+                <section>
+    <div class="container mb-4">
+        <a href="">EGI DIAN ADI.com</a>
+        
+        <a href="">Penerbangan Murah </a>
+    </div>
 
+  
+
+<section>
+    <div class="card-container">
+        <div class="card-deck ">
+            <div class="card border-0">
+            <img src="./img/plane.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title font-weight-bold">Satu pencarian, semua penerbangan</h5>
+                <p class="card-text">Kiwi-Code menemukan penerbangan murah yang tidak dapat dilihat oleh situs lain</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
-            <div class="row">
-                <div class="col-lg-10 info-panel">
+                </div>
+                <div class="card border-0">
+                <img src="./img/credit.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Pemesanan yang aman dan mudah</h5>
+                    <p class="card-text">Kami menerima sebagian besar metode pembayaran dan menjamin tingkat keamanan tertinggi</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+                </div>
+                <div class="card border-0">
+                <img src="./img/teamwork.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Dipercaya oleh jutaan orang</h5>
+                    <p class="card-text">Bergabunglah dengan lebih dari 10 juta penumpang setiap tahun yang memesan dengan mudah</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+                </div>
+
+                <div class="card border-0">
+                    <img src="./img/plane-ticket.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">harga terjangkau </h5>
+                        <p class="card-text">kami menyediakan maskapai termurah dengan fasilitas terbaik</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    </div>
+        
+
+                </div>
+     </div>
+</section>
+    
+
+                
+
+
+         <section>
+            <div class="container">
+                <h4 class="font-weight-bold mb-3">penerbangan nasional terpopuler</h4>
+
+                <div class="grub">
+
+                    <div class="div">
+                        <div class="card-group mb-3 border-0" >
+                            <div class="card boder-0 rounded-circle" id="gambar">
+                                <a href="URL_tujuan">
+                              <img src="./img/garuda.jpg" class="card-img-top border-0 rounded-circle" alt="...">
+                              </a>
+                              
+                              
+                            </div>
+                            <div class="card border-0 rounded-circle" id="gambar">
+                                <a href="URL_tujuan">
+                              <img src="./img/transnusa.jpg" class="card-img-top boder rounded-circle" alt="...">
+                            </a>
+                             
+                            </div>
+                            <div class="card border-0 rounded-circle"id="gambar">
+                                <a href="URL_tujuan">
+                              <img src="./img/indonesia.jpg" class="card-img-top boder rounded-circle" alt="...">
+                            </a>
+                            </div>
+                          </div>
+
+                    </div>
+
+                    <div>
+                        <div class="card-group">
+                            <div class="card borfer-0 rounded-circle"id="gambar">
+                                <a href="URL_tujuan">
+                              <img src="./img/mandala.jpg" class="card-img-top boder rounded-circle" alt="..." >
+                            </a>
+                              
+                            </div>
+                            <div class="card border-0 rounded-circle"id="gambar">
+                                <a href="URL_tujuan">
+                              <img src="./img/lion.jpg" class="card-img-top boder rounded-circle" alt="...">
+                            </a>
+                             
+                            </div>
+                            <div class="card border-0 rounded-circle"id="gambar">
+                                <a href="URL_tujuan">
+                              <img src="./img/xpress.png" class="card-img-top boder rounded-circle" alt="...">
+                            </a>
+                            </div>
+                          </div>
+                    </div>
+
+                   
+
+
 
                 </div>
             </div>
+            
+<div class="tutor">
+    <ul class="list-group mt-3">
+        <li class="list-group-item">
+            <h4 class="font-weight-bold" id="cara-memesan">Cara memesan penerbangan murah</h4>
+            <p>Kiwi.com adalah cara terbaik untuk mencari, menemukan, dan memesan penerbangan murah. Kami membuat diskon, penawaran penerbangan, dan tarif udara murah mudah ditemukan.</p>
+            <p>Untuk menemukan penerbangan murah secara online, Kiwi.com adalah cara terbaik dan termudah untuk mendapatkan diskon pada rute satu arah, pulang pergi, internasional, dan multi-kota. Panduan ini menjelaskan bagaimana Kiwi.com bekerja, dan bagaimana kami dapat membantu Anda mencari dan memesan penerbangan termurah yang tersedia.</p>
+            <h4 class="font-weight-bold" id="tips">Tips untuk memesan penerbangan murah di Kiwi.com</h4>
+            <h5 class="font-weight-bold" id="waktu">Waktu dan hari terbaik untuk memesan penerbangan</h5>
+            <p>Mudah untuk menemukan waktu dan hari terbaik untuk terbang menggunakan mesin pencari yang fleksibel dari Kiwi.com. Anda dapat memasukkan tanggal yang tepat yang Anda inginkan untuk bepergian, atau Anda dapat memilih rentang tanggal untuk menemukan opsi termurah</p>
+            <p>Ketika Anda mencari, Anda akan melihat harga terendah yang tersedia pada setiap tanggal, sehingga Anda dapat memilih yang paling cocok untuk Anda, atau filter untuk menemukan opsi tercepat atau terbaik. Anda juga dapat memfilter penerbangan berdasarkan harga maksimum, atau memilih rentang harga.</p>
+           <h4 class="font-weight-bold">Temukan penerbangan murah tanpa tujuan</h4>
+            <p>Jika Anda ingin menemukan penerbangan termurah ke mana saja, Anda juga dapat melakukannya di Kiwi.com. Jika Anda tidak memiliki tujuan tertentu, cukup pilih lokasi keberangkatan Anda dan pilih ’Ke mana saja’ sebagai tujuan Anda. Ini akan menunjukkan rute termurah dari lokasi Anda.</p>
+            <p>Anda juga dapat menggunakan pencarian peta kami untuk menemukan tujuan murah: perbesar atau pindahkan peta, dan tujuan dan harga akan muncul. Anda dapat melihat penawaran terbaik yang dihighlight dengan warna hijau, jadi Anda tahu Anda mendapatkan harga yang bagus.</p>
+
+
+
+        </li>
+    </ul>
+</div>
+            
+
+        </section>
+
+<div class="container mt-3">
+    <div>
+        
+
+        
+        <div class="jumbotron" id="slider">
+            <h1 class="font-weight-bold">Destinasi populer musim ini</h1>
+            <p>Kami merekomendasikan destinasi terbaik di musim ini</p>
+           
+            <div class="card-group">
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+
+    </div>
+</div>
+
+<div>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        
+      </button>
+
+      
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Judul Modal</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Konten Modal di sini...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+              <button type="button" class="btn btn-primary">Simpan Perubahan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+
+
+
+       
+        <button class="scroll-to-top-btn btn-primary rounded-pill" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
+
+
+
+
+
+
+
+
+          
+
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
 
 
 
@@ -113,13 +380,11 @@
 
 
 
+            <script src="script.js"></script> 
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
             
-        
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
-        
-
-    </body>
-    </html>
+        </body>
+        </html>

@@ -1,0 +1,8 @@
+.back{
+    /* fallback for old browsers */
+    background-image: url("./img/pesawat1.jpg");
+    }
+
+    #cd{
+        border-radius: 1rem;
+    }
