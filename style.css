@@ -1,86 +1,87 @@
 
 
-
 .content-box {
     background-image: url(./img/background.jpg); 
-    padding: 50px; 
+    padding: 50px;
     margin-top: -120px; 
-    border-radius: 5px;
-    width: 72%;
+    border: 1px solid #060606; 
+    border-radius: 5px; 
+    width: 72%; 
     margin-left: auto; 
     margin-right: auto;
-
+     
+    
     align-items: right; 
     background-size: cover;
 }
 
 .lead{
-    height: 30px;
+  height: 30px;
 }
 
 
 #jumbo {
 
-    background-image: url('./img/pesawat1.jpg');
-    background-size: cover;
-    background-position: 0px -350px;
-    color: white;
-    margin-top: 0px;
-    
+  background-image: url('./img/pesawat1.jpg');
+  background-size: cover;
+  background-position: 0px -350px;
+  color: white;
 }
 
+
+
 .card-deck {
- max-width: 70%;
- max-height: 70%;    
- margin-right: auto;
- margin-left: auto;
+max-width: 70%;
+max-height: 70%;    
+margin-right: auto;
+margin-left: auto;
 }
 
 .jumbotron-lg {
-    padding: 4rem 2rem;
-    margin-bottom: 2rem;
-    background-color: #e9ecef;
-    border-radius:.3rem;
-    font-size: 1.25rem;
-    line-height: 150px;
-  }
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius:.3rem;
+  font-size: 1.25rem;
+  line-height: 150px;
+}
 
-  .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
 
-  }
+}
 
   .card img {
   width: 70%; 
-  height: auto;
-  margin: 0 auto;
+  height: auto; 
+  margin: 0 auto; 
   border: 0;
 }
 
 .grub{
-    margin-left: 70px;
-    margin-left: 70px;
-    
+  margin-left: 70px;
+  margin-left: 70px;
+  
 }
 .tutor{
-    margin-top: 20px;
-    margin-left: 210px;
-    margin-right: 210px;
-    overflow-y: auto;
+  margin-top: 20px;
+  margin-left: 210px;
+  margin-right: 210px;
+  overflow-y: auto;
 }
 
 
 #gambar :hover{
-    filter: brightness(70%);
-    transition: filter 0.5s ease;
-    
+  filter: brightness(70%);
+  transition: filter 0.5s ease;
+  
 }
 
 .card{
-    transition: filter 0.3s ease;
+  transition: filter 0.3s ease;
 }
 
 
@@ -116,6 +117,7 @@ body {
     border: none;
   }
 
+
   #cardm{
     background-image: url(./img/everest.jpg);
   }
@@ -125,8 +127,5 @@ body {
   #cardk{
     background-image: url(./img/bali.jpg);
   }
-
-
-
   
   

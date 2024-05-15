@@ -35,12 +35,21 @@
     document.getElementById('tanggalPenjemputan').value = waktuSekarang;
     document.getElementById('tanggalPengambilan').value = waktuSekarang;
   }
-  function toggleAnswer(answerId) {
+  function toggleFAQAnswer(answerId) {
 	var answer = document.getElementById(answerId);
 	if (answer.style.display === "none") {
 		answer.style.display = "block";
 	} else {
 		answer.style.display = "none";
+	}
+}
+
+function toggleInfoAnswer(informasiId) {
+	var informasi = document.getElementById(informasiId);
+	if (informasi.style.display === "none") {
+		informasi.style.display = "block";
+	} else {
+		informasi.style.display = "none";
 	}
 }
 
