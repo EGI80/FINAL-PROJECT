@@ -128,4 +128,20 @@ body {
     background-image: url(./img/bali.jpg);
   }
   
-  
+  .navid{
+    
+    margin-right: 10px;
+  }
+  .nb{
+    padding-right: 10px;
+    font-family:sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+  }
+  .nb2{
+    font-family:sans-serif;
+    color: tomato;
+    font-weight: bold;
+    font-size: 30px;
+  }
