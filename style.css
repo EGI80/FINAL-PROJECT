@@ -1,17 +1,16 @@
 
 
+
 .content-box {
-    background-image: url(./img/background.jpg); /* Warna latar belakang */
-    padding: 50px; /* Jarak antara konten dan tepi kotak */
-    margin-top: -120px; /* Jarak antara kotak dan elemen sebelumnya (jumbotron)
-    border: 1px solid #060606; /* Garis tepi kotak */
-    border-radius: 5px; /* Sudut bulat untuk kotak */
-    width: 72%; /* Lebar kotak */
-    margin-left: auto; /* Menjadikan margin kiri otomatis */
+    background-image: url(./img/background.jpg); 
+    padding: 50px; 
+    margin-top: -120px; 
+    border-radius: 5px;
+    width: 72%;
+    margin-left: auto; 
     margin-right: auto;
-     /* Menggunakan flexbox */
-    /* Menyebarkan item secara merata */
-    align-items: right; /* Mengatur item secara vertikal di tengah */
+
+    align-items: right; 
     background-size: cover;
 }
 
@@ -55,9 +54,9 @@
   }
 
   .card img {
-  width: 70%; /* adjust the width to your desired size */
-  height: auto; /* maintain the aspect ratio */
-  margin: 0 auto; /* center the image horizontally */
+  width: 70%; 
+  height: auto;
+  margin: 0 auto;
   border: 0;
 }
 
@@ -115,6 +114,16 @@ body {
   
   .card-group {
     border: none;
+  }
+
+  #cardm{
+    background-image: url(./img/everest.jpg);
+  }
+  #cardf{
+    background-image: url(./img/gunung.jpg);
+  }
+  #cardk{
+    background-image: url(./img/bali.jpg);
   }
 
 
