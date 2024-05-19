@@ -3,12 +3,12 @@ body {
     background-color: #f5f5f5;
     margin: 0;
     padding: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding-top: 20px;  /* Tambahkan padding-top untuk memberikan ruang di atas */
+    padding-top: 20px;
 }
+
 
 .tim-container {
     width: 80%;
@@ -17,7 +17,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
-    box-sizing: border-box;  /* Pastikan padding dihitung dalam ukuran elemen */
+    box-sizing: border-box; 
+    margin: auto;
 }
 
 .tim-header {
@@ -51,7 +52,7 @@ body {
 
 .member-img {
     border-radius: 50%;
-    width: 150px; /* Ubah ukuran sesuai kebutuhan */
+    width: 150px; 
     height: 150px;
     object-fit: cover;
     margin-bottom: 15px;
@@ -65,7 +66,7 @@ body {
 }
 
 .tim-member p {
-    margin: 5px 0 0;  /* Tambahkan margin-top untuk memberikan ruang antara jabatan dan elemen di atasnya */
+    margin: 5px 0 0; 
     font-size: 1em;
     color: #777;
 }
@@ -85,4 +86,19 @@ body {
 
 .social-icon:hover {
     color: #007bff;
+}
+.gallery {
+    margin-top: 50px;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
