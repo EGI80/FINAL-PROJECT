@@ -4,51 +4,441 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cloas.css">
-    <title>trips explore.com</title>
+    <title>Trips explore.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <div class="deals">
-        <div class="top">
-            <div class="title">
-                <p>Flight deals from jakarta indonesia</p>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Trips Explore</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="form">
-                <p>Explore cheap travel deals</p>
+        </nav>
+        <div class="top ">
+            <div class="w-2 title ">
+                <h1>Flight deals from jakarta, indonesia</h1>
+            </div>
+            <div class="shadow-sm p-3 mb-5 bg-white rounded form card border-dark">
+                <h3>Explore cheap travel deals !</h3>
                 <p>We'll show you deals from your preferred departure city.</p>
-                <input type="text" name="" id="">     
+                <div class="d-flex ">
+                    <div class="d-flex m-2  shadow-sm p-3  bg-white rounded btn btn-outline-dark ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date-fill" viewBox="0 0 16 16">
+                        <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zm5.402 9.746c.625 0 1.184-.484 1.184-1.18 0-.832-.527-1.23-1.16-1.23-.586 0-1.168.387-1.168 1.21 0 .817.543 1.2 1.144 1.2"/>
+                        <path d="M16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-6.664-1.21c-1.11 0-1.656-.767-1.703-1.407h.683c.043.37.387.82 1.051.82.844 0 1.301-.848 1.305-2.164h-.027c-.153.414-.637.79-1.383.79-.852 0-1.676-.61-1.676-1.77 0-1.137.871-1.809 1.797-1.809 1.172 0 1.953.734 1.953 2.668 0 1.805-.742 2.871-2 2.871zm-2.89-5.435v5.332H5.77V8.079h-.012c-.29.156-.883.52-1.258.777V8.16a13 13 0 0 1 1.313-.805h.632z"/>
+                      </svg>
+                    <p class="m-2"> Dates</p>
+                </div>
+                    <div class="d-flex m-2 shadow-sm p-3  bg-white rounded btn btn-outline-dark ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
+                          </svg>
+                    <p class="m-2 "> Price </p>
+                </div> 
+                    <div class="d-flex  m-2 shadow-sm p-3  bg-white rounded btn btn-outline-dark">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                          </svg>
+                    <p class="m-2"> Return </p>
+                </div> </div>
             </div>
             </div>
         </div>
         <div class="mid">
-            <div class="card">
+            <div class="p-3 mb-3">
                 <div class="card-header">
-                    <img src="./img/frederic-paulussen-e-GV4AZRabY-unsplash.jpg" alt="">
+                    <img class="card-img-top" src="./img/1Tanjunlesun.jpg" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <p>Bandar Lampung</p>
-                    <p>4.500.000</p>
+                    <div class="shadow p-3 bg-white rounded">
+                        <h2 class="card-title"> Tanjung Lesung </h2>
+                        <h2 href="#" class="btn btn-primary">1,988,566</h2>
+                    </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="p-3 mb-3 ">
                 <div class="card-header">
-                    <img src="./img/frederic-paulussen-e-GV4AZRabY-unsplash.jpg" alt="">
+                    <img class="card-img-top" src="./img/1Rajaampat.jpeg" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <p>Bandar Lampung</p>
-                    <p>4.500.000</p>
+                    <div class="shadow p-3 bg-white rounded ">
+                        <h2 class="card-title">Raja Ampat</h2>
+                        <h2 href="#" class="btn btn-primary">4,234,567</h2>
+                    </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="p-3 mb-3">
                 <div class="card-header">
-                    <img src="./img/frederic-paulussen-e-GV4AZRabY-unsplash.jpg" alt="">
+                    <img class="card-img-top" src="./img/1Jogja.jpg" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <p>Bandar Lampung</p>
-                    <p>4.500.000</p>
+                    <div class="shadow p-3 bg-white rounded">
+                        <h2 class="card-title">Yogyakarta</h2>
+                        <h2 href="#" class="btn btn-primary">1,234,567</h2>
+                    </div>
                 </div>
-                
+            </div>
+            <div class="p-3 mb-3">
+                <div class="card-header">
+                    <img class="card-img-top" src="./img/1Lampung.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <div class="shadow p-3 bg-white rounded">
+                        <h2 class="card-title">Bandar Lampung</h2>
+                        <h2 href="#" class="btn btn-primary">2,234,567</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 mb-3">
+                <div class="card-header">
+                    <img class="card-img-top" src="./img/1Ntb.jpeg" alt="Card image cap">
+                </div>
+                <div class="card-body ">
+                    <div class="shadow p-3 bg-white rounded ">
+                        <h2 class="card-title">Nusa Tenggara B</h2>
+                        <h2 href="#" class="btn btn-primary">3,625,890</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 mb-3">
+                <div class="card-header">
+                    <img class="card-img-top" src="./img/1Padang.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <div class="shadow p-3 bg-white rounded">
+                        <h2 class="card-title">Kota Padang</h2>
+                        <h2 href="#" class="btn btn-primary">3,234,567</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 mb-3">
+                <div class="card-header">
+                    <img class="card-img-top" src="./img/1Pontiank.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <div class="shadow p-3 bg-white rounded">
+                        <h2 class="card-title">Kota Pontianak</h2>
+                        <h2 href="#" class="btn btn-primary">4,234,567</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 mb-3">
+                <div class="card-header">
+                    <img class="card-img-top" src="./img/1Kalteng.jpeg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <div class="shadow p-3 bg-white rounded">
+                        <h2 class="card-title">Danau Biru Paring Tali</h2>
+                        <h2 href="#" class="btn btn-primary">4,234,567</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 mb-3">
+                <div class="card-header">
+                    <img class="card-img-top" src="./img/1Bandung.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <div class="shadow p-3 bg-white rounded">
+                        <h2 class="card-title">Kota bandung</h2>
+                        <h2 href="#" class="btn btn-primary">1,234,567</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 mb-3">
+                <div class="card-header">
+                    <img src="./img/1Kl.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    <div class="shadow p-3 bg-white rounded">
+                        <h2 class="card-title">kuala Lumpur</h2>
+                        <h2 href="#" class="btn btn-primary">1,234,567</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 mb-3">
+                <div class="card-header">
+                    <img src="./img/1Chong.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    <div class="shadow p-3 bg-white rounded">
+                        <h2 class="card-title">Chongqing</h2>
+                        <h2 href="#" class="btn btn-primary">7,234,567</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 mb-3">
+                <div class="card-header">
+                    <img src="./img/1Shang.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    <div class="shadow p-3 bg-white rounded">
+                        <h2 class="card-title">Shanghai</h2>
+                        <h2 href="#" class="btn btn-primary">7,234,567</h2>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="bottom mx-5 ">
+            <div class="w-2 title">
+                <h1>Looking for a specific place to visit?</h1>    
+            </div>
+            <div class="shadow p-3 mb-5 bg-body rounded card border-dark">
+                <div class="kata d-flex">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle btn btn-dark " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Return
+                        </button>
+                        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">one-way</a></li>
+                          <li><a class="dropdown-item" href="#">Multi-City</a></li>
+                          <li><a class="dropdown-item" href="#">Nomad</a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle btn btn-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Economy
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Premium Economy</a></li>
+                          <li><a class="dropdown-item" href="#">Business</a></li>
+                          <li><a class="dropdown-item" href="#">First Class</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="bottom d-flex">
+                    <input type="text" placeholder="FROM">
+                    <input type="text" placeholder="TO">
+                    <input type="text" placeholder="Derparature">
+                    <input type="text" placeholder="Return">
+                </div>
+            </div>
+        </div>
+        <div class="before-footer mx-5">
+            <div class="w-2 title">
+                <h2>Popular flights from Jakarta, Indonesia</h2>
+            </div>
+            <div class="duo">
+                <div class="d-flex shadow p-3 mb-5 bg-body rounded gap-2 align-items-center btn btn-light border-dark">
+                    <div class="card-header">
+                        <img src="./img/1Tanjunlesun.jpg" alt="">
+                    </div>
+                    <div class=" kata">
+                        <span> Jakarta</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                          </svg>
+                        <span> Tanjung Lesung</span>
+                    </div>
+                </div>
+                <div class="d-flex shadow p-3 mb-5 bg-body rounded gap-2 align-items-center btn btn-light border-dark">
+                    <div class="card-header">
+                        <img src="./img/2Rajaampat.jpg" alt="">
+                    </div>
+                    <div class=" kata">
+                        <span> Jakarta</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                          </svg>
+                        <span> Raja Ampat </span>
+                    </div>
+                </div>
+                <div class="d-flex shadow p-3 mb-5 bg-body rounded gap-2 align-items-center btn btn-light border-dark">
+                    <div class="card-header">
+                        <img src="./img/1Jogja.jpg" alt="">
+                    </div>
+                    <div class=" kata">
+                        <span> Jakarta</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                          </svg>
+                        <span> Yogyakarta </span>
+                    </div>
+                </div>
+                <div class="d-flex shadow p-3 mb-5 bg-body rounded gap-2 align-items-center btn btn-light border-dark">
+                    <div class="card-header">
+                        <img src="./img/1lampung.jpg" alt="">
+                    </div>
+                    <div class=" kata">
+                        <span> Jakarta</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                          </svg>
+                        <span> Bandar Lampung</span>
+                    </div>
+                </div>
+                <div class="d-flex shadow p-3 mb-5 bg-body rounded gap-2 align-items-center btn btn-light border-dark">
+                    <div class="card-header">
+                        <img src="./img/1ntb.jpeg" alt="">
+                    </div>
+                    <div class=" kata">
+                        <span> Jakarta</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                          </svg>
+                        <span> Tenggara Barat</span>
+                    </div>
+                </div>
+                <div class="d-flex shadow p-3 mb-5 bg-body rounded gap-2 align-items-center btn btn-light border-dark">
+                    <div class="card-header">
+                        <img src="./img/1Padang.jpg" alt="">
+                    </div>
+                    <div class=" kata">
+                        <span> Jakarta</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                          </svg>
+                        <span>Padang</span>
+                    </div>
+                </div>
+                <div class="d-flex shadow p-3 mb-5 bg-body rounded gap-2 align-items-center btn btn-light border-dark">
+                    <div class="card-header">
+                        <img src="./img/1Pontiank.jpg" alt="">
+                    </div>
+                    <div class=" kata">
+                        <span> Jakarta</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                          </svg>
+                        <span> Pontianak</span>
+                    </div>
+                </div>
+                <div class="d-flex shadow p-3 mb-5 bg-body rounded gap-2 align-items-center btn btn-light border-dark">
+                    <div class="card-header">
+                        <img src="./img/1Kalteng.jpeg" alt="">
+                    </div>
+                    <div class=" kata">
+                        <span> Jakarta</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                          </svg>
+                        <span> Paring Tali </span>
+                    </div>
+                </div>
+                <div class="d-flex shadow p-3 mb-5 bg-body rounded gap-2 align-items-center btn btn-light border-dark">
+                    <div class="card-header">
+                        <img src="./img/1Bandung.jpg" alt="">
+                    </div>
+                    <div class=" kata">
+                        <span> Jakarta</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                          </svg>
+                        <span> Bandung</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Follow us on social networks for the latest info and promotions:</span>
+            </div>
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="bi bi-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="bi bi-gem me-3"></i>Trips Explore
+                        </h6>
+                        <p>
+                                 Discover new adventures and create unforgettable memories with our travel services. Explore the world with comfort and the best prices.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Angular</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">React</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Vue</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Laravel</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="bi bi-house me-3"></i>Daerah Istimewa Yogyakarta 55584</p>
+                        <p>
+                            <i class="bi bi-envelope me-3"></i>
+                            hamkananda@students.amikom.ac.id
+                        </p>
+                        <p><i class="bi bi-phone me-3"></i> +62 1234 1234</p>
+                        <p><i class="bi bi-printer me-3"></i> +62 1234 1234</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Hak Cipta Dilindungi
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">https://tripsexplore.com/</a>
+        </div>
+    </footer>
     </div>
 </body>
 </html>
