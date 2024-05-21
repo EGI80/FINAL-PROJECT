@@ -6,7 +6,7 @@ body {
     
 }
 .top {
-    background-image: url('./gmbr-1.avif');
+    background-image: url('./img/leaf.jpg') ;
     align-items: end;
     height: 19rem;
     display: flex;
