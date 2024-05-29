@@ -76,12 +76,12 @@
     margin-top: -60px;
 }
 .waktu-penjemputan{
-    margin-left: 520px;
+    margin-left: 620px;
     margin-top: -25px;
 
 }  
 .waktu-pengambilan{
-    margin-left: 715px;
+    margin-left: 855px;
     margin-top: -25px;
 
 }
@@ -113,31 +113,31 @@ main {
     margin-left: 70px;
     margin-right: 70px;
 }
-#gallery figure:nth-child(7n+1){
+#gallery figure:nth-child(1n){
     --duration: 2s;
     margin-right: -130px;
 }
-#gallery figure:nth-child(7n+2){
+#gallery figure:nth-child(2n){
     --duration: 1.5s;
     margin-left: -50px;
 }
-#gallery figure:nth-child(7n + 3){
+#gallery figure:nth-child(3n){
     --duration:2s;
     margin-left: -100px;
 }
-#gallery figure:nth-child(7n + 4) {
+#gallery figure:nth-child(4n){
 	--duration: 1.5s;
     margin-left: -150px;
 }
-#gallery figure:nth-child(7n + 5) {
+#gallery figure:nth-child(5n){
 	--duration: 2s;
     margin-left: -200px;
 }
-#gallery figure:nth-child(7n+6){
+#gallery figure:nth-child(6n){
     --duration: 1.5s;
     margin-left: -250px;
 }
-#gallery figure:nth-child(7n+7){
+#gallery figure:nth-child(7n){
     --duration: 2s;
     margin-left: -300px;
 }

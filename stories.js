@@ -1,9 +1,8 @@
-<!-- JavaScript to make text appear one letter at a time -->
+
 <script>
-  // JavaScript to make text appear one letter at a time
-  const text = "Stories";
-  let index = 0;
-  const interval = 200; // Adjust the interval to control the speed of appearance
+const text = "Stories";
+let index = 0;
+const interval = 200;
 
   function displayText() {
     if (index < text.length) {
