@@ -117,7 +117,9 @@
 <body style="font-family: Arial, sans-serif; background: #f4f4f9; margin: 0; padding: 20px;">
 
     <h1 style="text-align: center; color: #333;">Halaman Dashboard Admin IndahCargoLogistik</h1>
-    <h2 style="text-align: center; color: #555;">Edit services</h2>
+    <h2 style="text-align: center; color: #555;"></h2>
+    <br>
+    <br>
 
     <div style="text-align: center; margin-bottom: 20px;">
         <a href="{{ route('services.create') }}" style="background-color: #337ab7; color: #ffffff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block;">Buat services</a>
@@ -136,15 +138,15 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($services as $services)
+                @foreach ($services as $service)
                 <tr style="background-color: #f9f9f9;">
 
-                    <td style="width: 300px; padding: 10px;">{{ $services->judul }}</td>
-                    <td style="width: 300px; padding: 10px;">{{ $services->subjudul }}</td>
+                    <td style="width: 300px; padding: 10px;">{{ $service->judul }}</td>
+                    <td style="width: 300px; padding: 10px;">{{ $service->subjudul }}</td>
 
                     <td style="width: 150px; text-align: center; padding: 10px;">
-                        <a href="{{ route('services.edit', $services->id) }}" class="btn btn-warning" style="background-color: #ffc107; color: #ffffff; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none;">Edit</a>
-                        <form action="{{ route('services.destroy', $services->id) }}" method="POST" class="d-inline" style="display: inline;">
+                        <a href="{{ route('services.edit', $service->id) }}" class="btn btn-warning" style="background-color: #ffc107; color: #ffffff; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none;">Edit</a>
+                        <form action="{{ route('services.destroy', $service->id) }}" method="POST" class="d-inline" style="display: inline;">
                             @csrf
                             @method('POST')
                             <button type="submit" class="btn btn-danger" style="background-color: #dc3545; color: #ffffff; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;">Hapus</button>

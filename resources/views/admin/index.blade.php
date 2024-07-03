@@ -115,7 +115,7 @@
 </head>
 
 <body id="home">
-    <h1>Ini Adalah Dashboard Admin Indah Logistik</h1>
+    <h1 style="text-align: center;">Ini Adalah Dashboard Admin Indah Logistik</h1>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; padding: 50px;">
         <div style="background-color: #fff; border: 1px solid rgba(0,0,0,0.1); box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 1rem; overflow: hidden;">
             <img src="{{ asset('assets/images/logologo.jpeg') }}" style="width: 100%; height: 200px; object-fit: cover;" alt="">
@@ -128,7 +128,7 @@
 
 
         <div style="background-color: #fff; border: 1px solid rgba(0,0,0,0.1); box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 1rem; overflow: hidden;">
-            <img src="{{ asset('assets/images/logologo.jpeg') }}" style="width: 100%; height: 200px; object-fit: cover;" alt="">
+            <img src="{{ asset('assets/images/about.png') }}" style="width: 100%; height: 200px; object-fit: cover;" alt="">
             <div style="padding: 1.25rem;">
                 <h5 style="font-weight: bold; margin-bottom: 0.5rem; color: #007bff;">About</h5>
                 <p style="font-size: 1rem; margin-bottom: 1rem; color: #555;">Kelola About</p>
@@ -137,20 +137,29 @@
         </div>
 
         <div style="background-color: #fff; border: 1px solid rgba(0,0,0,0.1); box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 1rem; overflow: hidden;">
-            <img src="{{ asset('assets/images/logologo.jpeg') }}" style="width: 100%; height: 200px; object-fit: cover;" alt="">
+            <img src="{{ asset('assets/images/service.png') }}" style="width: 100%; height: 200px; object-fit: cover;" alt="">
             <div style="padding: 1.25rem;">
-                <h5 style="font-weight: bold; margin-bottom: 0.5rem; color: #007bff;">service</h5>
+                <h5 style="font-weight: bold; margin-bottom: 0.5rem; color: #007bff;">Service</h5>
                 <p style="font-size: 1rem; margin-bottom: 1rem; color: #555;">Kelola service</p>
                 <a href="{{route('services')}}" style="background-color: #007bff; color: white; padding: 0.5rem 1rem; border: none; border-radius: 0.25rem; text-decoration: none; display: inline-block;">Detail</a>
             </div>
         </div>
 
         <div style="background-color: #fff; border: 1px solid rgba(0,0,0,0.1); box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 1rem; overflow: hidden;">
-            <img src="{{ asset('assets/images/logologo.jpeg') }}" style="width: 100%; height: 200px; object-fit: cover;" alt="">
+            <img src="{{ asset('assets/images/cabang.png') }}" style="width: 100%; height: 200px; object-fit: cover;" alt="">
             <div style="padding: 1.25rem;">
                 <h5 style="font-weight: bold; margin-bottom: 0.5rem; color: #007bff;">Cabang</h5>
                 <p style="font-size: 1rem; margin-bottom: 1rem; color: #555;">Kelola Cabang</p>
                 <a href="{{route('project')}}" style="background-color: #007bff; color: white; padding: 0.5rem 1rem; border: none; border-radius: 0.25rem; text-decoration: none; display: inline-block;">Detail</a>
+            </div>
+        </div>
+
+        <div style="background-color: #fff; border: 1px solid rgba(0,0,0,0.1); box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 1rem; overflow: hidden;">
+            <img src="{{ asset('assets/images/teams.png') }}" style="width: 100%; height: 200px; object-fit: cover;" alt="">
+            <div style="padding: 1.25rem;">
+                <h5 style="font-weight: bold; margin-bottom: 0.5rem; color: #007bff;">Team</h5>
+                <p style="font-size: 1rem; margin-bottom: 1rem; color: #555;">Kelola Team</p>
+                <a href="{{route('team')}}" style="background-color: #007bff; color: white; padding: 0.5rem 1rem; border: none; border-radius: 0.25rem; text-decoration: none; display: inline-block;">Detail</a>
             </div>
         </div>
 

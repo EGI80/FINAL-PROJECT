@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Project;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Http\File;
+use Illuminate\Support\Facades\Storage;
 use Image; // Pastikan ini diimpor jika Anda menggunakan library Image
 
 class ProjectController extends Controller

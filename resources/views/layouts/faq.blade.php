@@ -6,7 +6,7 @@
                   FAQ
               </h1>
               <p class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Pertanyaan yang sering diajukan.
               </p>
 
               <div class="accordion pt-4" id="accordionExample">
@@ -20,15 +20,10 @@
                               </h2>
                               <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                   <div class="accordion-body">
-                                      <strong>This is the first item's accordion body.</strong>
-                                      It is shown by default, until the collapse plugin adds the
-                                      appropriate classes that we use to style each element.
-                                      These classes control the overall appearance, as well as
-                                      the showing and hiding via CSS transitions. You can modify
-                                      any of this with custom CSS or overriding our default
-                                      variables. It's also worth noting that just about any HTML
-                                      can go within the <code>.accordion-body</code>, though the
-                                      transition does limit overflow.
+                                  <strong>Indah Logistik adalah perusahaan logistik terkemuka</strong>
+                                  yang menyediakan berbagai layanan pengiriman barang, baik domestik maupun internasional.
+                                  Meskipun kami berkomitmen untuk memberikan layanan yang berkualitas dan efisien,
+                                  layanan kami tidak diberikan secara gratis.
                                   </div>
                               </div>
                           </div>
@@ -42,15 +37,9 @@
                               </h2>
                               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                   <div class="accordion-body">
-                                      <strong>This is the first item's accordion body.</strong>
-                                      It is shown by default, until the collapse plugin adds the
-                                      appropriate classes that we use to style each element.
-                                      These classes control the overall appearance, as well as
-                                      the showing and hiding via CSS transitions. You can modify
-                                      any of this with custom CSS or overriding our default
-                                      variables. It's also worth noting that just about any HTML
-                                      can go within the <code>.accordion-body</code>, though the
-                                      transition does limit overflow.
+                                      <strong>Indah Logistik tidak hanya berfokus pada pengiriman barang</strong>
+                                       tetapi juga berkomitmen untuk memberikan edukasi kepada pelanggan
+                                       dan masyarakat tentang berbagai aspek logistik dan pengiriman.
                                   </div>
                               </div>
                           </div>
@@ -64,15 +53,10 @@
                               </h2>
                               <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                   <div class="accordion-body">
-                                      <strong>This is the first item's accordion body.</strong>
-                                      It is shown by default, until the collapse plugin adds the
-                                      appropriate classes that we use to style each element.
-                                      These classes control the overall appearance, as well as
-                                      the showing and hiding via CSS transitions. You can modify
-                                      any of this with custom CSS or overriding our default
-                                      variables. It's also worth noting that just about any HTML
-                                      can go within the <code>.accordion-body</code>, though the
-                                      transition does limit overflow.
+                                   <strong>Mengakses layanan Indah Logistik sangatlah mudah dan dirancang untuk kenyamanan pelanggan.</strong>
+                                   Kunjungi Situs Web Kami:
+                                   Buka browser Anda dan kunjungi situs resmi Indah Logistik di www.indahlogistik.com.
+                                   Anda akan menemukan berbagai informasi tentang layanan kami, tarif pengiriman, serta berita dan pembaruan terbaru.
                                   </div>
                               </div>
                           </div>
@@ -86,15 +70,10 @@
                               </h2>
                               <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                   <div class="accordion-body">
-                                      <strong>This is the first item's accordion body.</strong>
-                                      It is shown by default, until the collapse plugin adds the
-                                      appropriate classes that we use to style each element.
-                                      These classes control the overall appearance, as well as
-                                      the showing and hiding via CSS transitions. You can modify
-                                      any of this with custom CSS or overriding our default
-                                      variables. It's also worth noting that just about any HTML
-                                      can go within the <code>.accordion-body</code>, though the
-                                      transition does limit overflow.
+                                  <strong>Indah Logistik berkomitmen </strong>
+                                  untuk menyediakan layanan pengiriman yang dapat diandalkan dan selalu tersedia
+                                  untuk memenuhi kebutuhan pelanggan kami. Berikut adalah beberapa
+                                  poin penting terkait aksesibilitas layanan kami
                                   </div>
                               </div>
                           </div>
@@ -108,15 +87,8 @@
                               </h2>
                               <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                   <div class="accordion-body">
-                                      <strong>This is the first item's accordion body.</strong>
-                                      It is shown by default, until the collapse plugin adds the
-                                      appropriate classes that we use to style each element.
-                                      These classes control the overall appearance, as well as
-                                      the showing and hiding via CSS transitions. You can modify
-                                      any of this with custom CSS or overriding our default
-                                      variables. It's also worth noting that just about any HTML
-                                      can go within the <code>.accordion-body</code>, though the
-                                      transition does limit overflow.
+                                  <strong>Indah Logistik berkomitmen </strong> untuk memberikan layanan terbaik
+                                  dengan menyediakan berbagai sumber daya untuk membantu pelanggan kami.
                                   </div>
                               </div>
                           </div>
@@ -130,15 +102,10 @@
                               </h2>
                               <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                   <div class="accordion-body">
-                                      <strong>This is the first item's accordion body.</strong>
-                                      It is shown by default, until the collapse plugin adds the
-                                      appropriate classes that we use to style each element.
-                                      These classes control the overall appearance, as well as
-                                      the showing and hiding via CSS transitions. You can modify
-                                      any of this with custom CSS or overriding our default
-                                      variables. It's also worth noting that just about any HTML
-                                      can go within the <code>.accordion-body</code>, though the
-                                      transition does limit overflow.
+                                   <strong>Indah Logistik berkomitmen </strong>
+                                   untuk memberikan layanan yang mudah digunakan oleh semua pelanggan,
+                                   termasuk mereka yang baru pertama kali menggunakan layanan logistik.
+                                   Berikut adalah informasi mengenai apakah layanan kami ramah bagi pemula
                                   </div>
                               </div>
                           </div>

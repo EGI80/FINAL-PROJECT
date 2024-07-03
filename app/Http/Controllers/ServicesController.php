@@ -4,6 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Services;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
+use Illuminate\Http\File;
+use Illuminate\Support\Facades\Storage;
+
+
 
 class ServicesController extends Controller
 {
@@ -11,7 +16,7 @@ class ServicesController extends Controller
     public function index()
     {
         return view('admin.service.index', [
-            'services' => services::orderBy('id', 'desc')->get()
+            'services' => Services::orderBy('id', 'desc')->get()
         ]);
     }
 

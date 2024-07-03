@@ -8,6 +8,8 @@ use App\Http\Controllers\heroController;
 use App\Http\Controllers\ServicesController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\teamController;
+use App\Http\Controllers\teamsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,12 +49,19 @@ Route::get('/services/create', [servicesController::class, 'create'])->name('ser
 Route::post('/services/store', [servicesController::class, 'store'])->name('services.store')->middleware('auth');
 Route::get('/services/edit/{id}', [servicesController::class, 'edit'])->name('services.edit')->middleware('auth');
 Route::post('/services/update/{id}', [servicesController::class, 'update'])->name('services.update')->middleware('auth');
-Route::post('/services/destroy/{id}', [servicesController::class, 'destroy'])->name('services.destroy')->middleware('auth');
+Route::post('/services/destroy/{id}', [ServicesController::class, 'destroy'])->name('services.destroy')->middleware('auth');
 
-Route::get('/project', [projectController::class, 'index'])->name('project')->middleware('auth');
+Route::get('/project', [ProjectController::class, 'index'])->name('project')->middleware('auth');
 Route::get('/project/create', [projectController::class, 'create'])->name('project.create')->middleware('auth');
 Route::post('/project/store', [projectController::class, 'store'])->name('project.store')->middleware('auth');
 Route::get('/project/edit/{id}', [projectController::class, 'edit'])->name('project.edit')->middleware('auth');
 Route::post('/project/update/{id}', [projectController::class, 'update'])->name('project.update')->middleware('auth');
 Route::post('/project/destroy/{id}', [projectController::class, 'destroy'])->name('project.destroy')->middleware('auth');
-Route::resource('projects', ProjectController::class);
+
+
+Route::get('/team', [teamController::class, 'index'])->name('team')->middleware('auth');
+Route::get('/team/create', [teamController::class, 'create'])->name('team.create')->middleware('auth');
+Route::post('/team/store', [teamController::class, 'store'])->name('team.store')->middleware('auth');
+Route::get('/team/edit/{id}', [teamController::class, 'edit'])->name('team.edit')->middleware('auth');
+Route::post('/team/update/{id}', [teamController::class, 'update'])->name('team.update')->middleware('auth');
+Route::post('/team/destroy/{id}', [teamController::class, 'destroy'])->name('team.destroy')->middleware('auth');

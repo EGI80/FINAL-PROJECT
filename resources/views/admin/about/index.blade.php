@@ -117,7 +117,9 @@
 <body style="font-family: Arial, sans-serif; background: #f4f4f9; margin: 0; padding: 20px;">
 
     <h1 style="text-align: center; color: #333;">Halaman Dashboard Admin IndahCargoLogistik</h1>
-    <h2 style="text-align: center; color: #555;">Edit about</h2>
+    <h2 style="text-align: center; color: #555;"></h2>
+    <br>
+    <br>
 
     <div style="text-align: center; margin-bottom: 20px;">
         <a href="{{ route('about.create') }}" style="background-color: #337ab7; color: #ffffff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block;">Buat about</a>

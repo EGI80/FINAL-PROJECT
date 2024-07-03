@@ -12,65 +12,65 @@
             padding-bottom: 50px;
         }
 
-        /* Hero */
-        .hero-box .box p {
+        /* teams */
+        .teams-box .box p {
             width: 500px;
         }
 
-        .hero-box .box img {
+        .teams-box .box img {
             width: 400px;
         }
 
-        .hero-box .box:nth-child(1) {
+        .teams-box .box:nth-child(1) {
             --animate-delay: 0.5s;
         }
 
         @media (max-width: 992px) {
-            .hero-box .box p {
+            .teams-box .box p {
                 font-size: 14px;
                 width: 300px;
             }
 
-            .hero-box .box img {
+            .teams-box .box img {
                 width: 300px;
             }
         }
 
         @media (max-width: 768px) {
-            .hero {
+            .teams {
                 padding-top: 50px;
             }
 
-            .hero-box {
+            .teams-box {
                 text-align: center;
             }
 
-            .hero-box .box p {
+            .teams-box .box p {
                 width: 100%;
             }
         }
 
-        /* Hero */
+        /* teams */
 
-        /* hero */
-        .hero-box img {
+        /* teams */
+        .teams-box img {
             width: 400px;
         }
 
         @media (max-width: 475px) {
-            .hero-box img {
+            .teams-box img {
                 width: 300px;
             }
         }
 
-        /* hero */
+        /* teams */
 
-        /* Services */
-        .services-box .service i {
+        /* teams */
+        .teams-box .team i {
             font-size: 30px;
         }
 
-        /* Services */
+        /* teams */
 
         /* FAQ */
         .faq-box .accordion-button::after {
@@ -122,7 +122,7 @@
     <br>
 
     <div style="text-align: center; margin-bottom: 20px;">
-        <a href="{{ route('hero.create') }}" style="background-color: #337ab7; color: #ffffff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block;">Buat hero</a>
+        <a href="{{ route('team.create') }}" style="background-color: #337ab7; color: #ffffff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block;">Buat teams</a>
         <a href="/dashboard" style="background-color: #4CAF50; color: #ffffff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Kembali ke Dashboard</a>
     </div>
 
@@ -131,23 +131,22 @@
         <table style="width: 100%; border-collapse: collapse;">
             <thead>
                 <tr>
-                    <th style="background-color: #f0f0f0; border-bottom: 1px solid #ddd; padding: 10px; text-align: left;">Image</th>
                     <th style="background-color: #f0f0f0; border-bottom: 1px solid #ddd; padding: 10px; text-align: left;">Judul</th>
-                    <th style="background-color: #f0f0f0; border-bottom: 1px solid #ddd; padding: 10px; text-align: left;">SubJudul</th>
+                    <th style="background-color: #f0f0f0; border-bottom: 1px solid #ddd; padding: 10px; text-align: left;">subJudul</th>
+
                     <th style="background-color: #f0f0f0; border-bottom: 1px solid #ddd; padding: 10px; text-align: left;">Aksi</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($heros as $hero)
+                @foreach ($teams as $team)
                 <tr style="background-color: #f9f9f9;">
-                    <td style="width: 150px; padding: 10px;">
-                        <img src="{{ asset('storage/hero/'.$hero->image) }}" height="100" style="border-radius: 10px; width: 100%; object-fit: cover;">
-                    </td>
-                    <td style="width: 300px; padding: 10px;">{{ $hero->judul }}</td>
-                    <td style="width: 300px; padding: 10px;">{{ $hero->subjudul }}</td>
+
+                    <td style="width: 300px; padding: 10px;">{{ $team->judul }}</td>
+                    <td style="width: 300px; padding: 10px;">{{ $team->subjudul }}</td>
+
                     <td style="width: 150px; text-align: center; padding: 10px;">
-                        <a href="{{ route('hero.edit', $hero->id) }}" class="btn btn-warning" style="background-color: #ffc107; color: #ffffff; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none;">Edit</a>
-                        <form action="{{ route('hero.destroy', $hero->id) }}" method="POST" class="d-inline" style="display: inline;">
+                        <a href="{{ route('team.edit', $team->id) }}" class="btn btn-warning" style="background-color: #ffc107; color: #ffffff; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none;">Edit</a>
+                        <form action="{{ route('team.destroy', $team->id) }}" method="POST" class="d-inline" style="display: inline;">
                             @csrf
                             @method('POST')
                             <button type="submit" class="btn btn-danger" style="background-color: #dc3545; color: #ffffff; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;">Hapus</button>

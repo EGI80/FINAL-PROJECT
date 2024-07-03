@@ -38,12 +38,6 @@
               </div>
           </div>
 
-          <div class="copyright text-center text-white">
-              <p class="lh-lg">
-                  &copy;
-                  copyright by students amikom
-                  <span class="fw-bold">
-          </div>
       </div>
   </section>
   <!-- Footer -->

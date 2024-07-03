@@ -24,6 +24,9 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#faq">FAQ</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#team">TEAM</a>
+                </li>
             </ul>
         </div>
     </div>
