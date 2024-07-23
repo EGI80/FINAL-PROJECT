@@ -22,10 +22,10 @@
                     <a class="nav-link text-white" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#faq">FAQ</a>
+                    <a class="nav-link text-white" href="#faq">Faq</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#team">TEAM</a>
+                    <a class="nav-link text-white" href="#team">Team</a>
                 </li>
             </ul>
         </div>

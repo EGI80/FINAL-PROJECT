@@ -115,7 +115,7 @@
 </head>
 
 <body id="home">
-    <h1 style="text-align: center;">Ini Adalah Dashboard Admin Indah Logistik</h1>
+    <h1 style="text-align: center;"></h1>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; padding: 50px;">
         <div style="background-color: #fff; border: 1px solid rgba(0,0,0,0.1); box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 1rem; overflow: hidden;">
             <img src="{{ asset('assets/images/logologo.jpeg') }}" style="width: 100%; height: 200px; object-fit: cover;" alt="">

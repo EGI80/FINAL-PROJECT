@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project PT Usbarja</title>
+    <title>Project </title>
     <link rel="shortcut icon" href="{{ asset('assets/images/adit.png') }}">
     <link rel="stylesheet" href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" />
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">

@@ -5,7 +5,7 @@
               <div class="row justify-content-between row-gap-4">
                   <div class="col col-md-4 col-12 text-white">
                       <div class="d-flex align-items-center gap-2">
-                          <img src="https://indahcargosurabaya.b-cdn.net/wp-content/uploads/2022/08/indah-cargo-surabaya.png" alt="Logo" width="200" height="200" class="d-inline-block align-text-top rounded" />
+                          <img src="https://i.ibb.co.com/8Y2rkFW/indahkargo-removebg-preview.png" alt="Logo" width="300" height="150"  class="d-inline-block align-text-top rounded" />
                           <h2 class="fw-bold text-white"></h2>
                       </div>
                       <p class="lh-lg opacity-75 m-0">

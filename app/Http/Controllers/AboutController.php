@@ -54,7 +54,6 @@ class AboutController extends Controller
 
         about::create([
             'judul' => $request->judul,
-
             'image' => $fileName,
 
         ]);
